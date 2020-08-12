@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:id="@+id/insertar_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <AutoCompleteTextView
+                    android:id="@+id/txtCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CODIGO"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText" />
+
+            <AutoCompleteTextView
+                    android:id="@+id/txtDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripcion"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText" />
+            <AutoCompleteTextView
+                    android:id="@+id/txtPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="PRECIO"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GUARDAR"
+                android:maxLines="1"
+                tools:ignore="HardcodedText" />
+
+</LinearLayout>
+</RelativeLayout>
